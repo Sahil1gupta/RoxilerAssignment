@@ -11,7 +11,7 @@ const TransactionsTable = ({ month, search, setSearch }) => {
     const fetchData = async () => {
       setLoading(true); // Start loading
       try {
-        const res = await axios.get("http://localhost:3000/api/transaction", {
+        const res = await axios.get("https://roxilerassignment-3.onrender.com/api/transaction", {
           params: { month, search, page, limit: 10 }
         });
         setTransactions(res.data.transactions);

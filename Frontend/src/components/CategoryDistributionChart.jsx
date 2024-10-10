@@ -24,7 +24,7 @@ const CategoryDistributionChart = ({ month }) => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/api/category-distribution", {
+      .get("https://roxilerassignment-3.onrender.com/api/category-distribution", {
         params: { month }
       })
       .then((res) => {

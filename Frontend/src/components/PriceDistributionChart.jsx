@@ -20,7 +20,7 @@ const PriceDistributionChart = ({ month }) => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/api/price-distribution", {
+      .get("https://roxilerassignment-3.onrender.com/api/price-distribution", {
         params: { month }
       })
       .then((res) => {

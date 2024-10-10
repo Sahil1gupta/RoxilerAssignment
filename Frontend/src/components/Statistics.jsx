@@ -10,7 +10,7 @@ const Statistics = ({ month }) => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/api/statistics", {
+      .get("https://roxilerassignment-3.onrender.com/api/statistics", {
         params: { month }
       })
       .then((res) => setStats(res.data))
